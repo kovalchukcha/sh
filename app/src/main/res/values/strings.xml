@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartHouse</string>
+    <string name="smart_home">Умный дом</string>
+    <string name="email_hint">Электронная почта</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_btn">Войти</string>
+    <string name="register_btn">Регистрация</string>
+    <string name="example_string">Создайтe &#10; пин-код</string>
+</resources>

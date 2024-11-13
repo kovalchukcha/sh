@@ -104,6 +104,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:text="Адрес" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="г. Омск, ул. Ленина, д. 24"
+            android:textColorHint="#101010"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:text="Пароль" />
 
         <EditText
@@ -121,7 +136,7 @@
         android:id="@+id/mButton"
         android:layout_width="200dp"
         android:layout_height="61dp"
-        android:layout_marginTop="552dp"
+        android:layout_marginTop="592dp"
         android:background="@drawable/radius_style"
         android:backgroundTint="#0B509F"
         android:text="Сохранить"
@@ -140,7 +155,7 @@
         android:layout_height="61dp"
         android:background="@drawable/radius_style"
         android:backgroundTint="#F81118"
-        android:text="Удалить"
+        android:text="Выйти"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -150,6 +165,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mButton"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.719" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@drawable/rectangle"
     android:background="@drawable/background"
-    tools:context=".Code">
+    tools:context=".MainActivity">
 
 
     <ImageView
@@ -91,6 +91,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button1"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -103,6 +104,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button2"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -118,6 +120,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button3"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -130,6 +133,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button4"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -142,6 +146,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button5"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -154,6 +159,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button6"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -166,6 +172,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button7"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -178,6 +185,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button8"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -190,6 +198,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:onClick="onClick"
             android:id="@+id/button9"
             android:layout_width="74dp"
             android:layout_height="59dp"
@@ -200,7 +209,6 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="normal" />
-
 
     </GridLayout>
 

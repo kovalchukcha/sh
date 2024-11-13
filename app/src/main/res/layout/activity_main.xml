@@ -27,7 +27,7 @@
         android:background="#94B0CAD6"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/materialButton"
+        app:layout_constraintBottom_toTopOf="@+id/mButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -66,8 +66,8 @@
 
     </LinearLayout>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+    <Button
+        android:id="@+id/mButton"
         android:layout_width="262dp"
         android:layout_height="48dp"
         android:layout_marginBottom="212dp"
@@ -83,12 +83,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:layout_width="266dp"
         android:layout_height="48dp"
         android:layout_marginBottom="136dp"
         android:background="@drawable/radius_style"
         android:backgroundTint="#3E3838"
+        android:id="@+id/buttonReg"
         android:text="Регистрация"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/white"

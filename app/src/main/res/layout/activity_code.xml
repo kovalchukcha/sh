@@ -50,27 +50,31 @@
         app:layout_constraintTop_toBottomOf="@+id/titleTextView"
         app:layout_constraintVertical_bias="0.0">
 
-        <View
+        <EditText
             android:layout_width="20dp"
+            android:id="@+id/dot1"
             android:layout_height="20dp"
             android:layout_margin="10dp"
             android:background="@drawable/pin_code_background" />
 
-        <View
+        <EditText
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:id="@+id/dot2"
             android:layout_margin="10dp"
             android:background="@drawable/pin_code_background" />
 
-        <View
+        <EditText
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:id="@+id/dot3"
             android:layout_margin="10dp"
             android:background="@drawable/pin_code_background" />
 
-        <View
+        <EditText
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:id="@+id/dot4"
             android:layout_margin="10dp"
             android:background="@drawable/pin_code_background" />
     </LinearLayout>
@@ -146,13 +150,13 @@
             android:textStyle="normal" />
 
         <Button
-            android:onClick="onClick"
             android:id="@+id/button5"
-            android:layout_width="74dp"
+            android:layout_width="71dp"
             android:layout_height="59dp"
             android:layout_margin="10dp"
             android:background="@drawable/button_background"
             android:fontFamily="sans-serif-light"
+            android:onClick="onClick"
             android:text="5"
             android:textColor="@color/black"
             android:textSize="24sp"

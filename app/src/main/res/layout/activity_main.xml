@@ -43,7 +43,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:id="@+id/email"
             android:hint="usernametest@mail.ru"
             android:inputType="textEmailAddress"
             android:textColorHint="#101010"
@@ -60,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="********"
+            android:id="@+id/password"
             android:inputType="textPassword"
             android:textColorHint="#101010"
             android:textStyle="bold" />

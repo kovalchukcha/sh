@@ -65,7 +65,7 @@
         android:background="#94B0CAD6"
         android:columnCount="3"
         android:rowCount="4"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -187,7 +187,7 @@
     </GridLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonExit"
         android:layout_width="266dp"
         android:layout_height="48dp"
         android:backgroundTint="#3E3838"

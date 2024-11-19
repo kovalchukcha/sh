@@ -40,11 +40,11 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHome"
         app:layout_constraintVertical_bias="0.638" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextHome"
         android:layout_width="377dp"
         android:layout_height="44dp"
         android:layout_marginTop="36dp"

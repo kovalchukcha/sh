@@ -10,6 +10,8 @@ class Exit : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exit)
 
+
+
         val button : Button = findViewById(R.id.buttonExit)
         button.setOnClickListener{
             val intent2 = Intent(this, MainActivity::class.java)

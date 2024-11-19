@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="342dp"
+        android:layout_height="136dp"
+        android:background="@drawable/bluecirclebutton"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/room_device_img"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/sofa2" />
+
+        <TextView
+            android:id="@+id/room_device_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Гостиная"
+            android:textColor="#0B509F"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

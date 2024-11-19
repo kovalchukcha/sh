@@ -12,6 +12,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import io.github.jan.supabase.auth.Auth
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
@@ -38,52 +39,43 @@ class MainActivity : AppCompatActivity() {
 
         emailEditText = findViewById(R.id.email)
         passwordEditText = findViewById(R.id.password)
-       // loginButton = findViewById(R.id.mButton)
 
-    //    loginButton.setOnClickListener{ validateInput()}
+            val emailEditText = findViewById<EditText>(R.id.email)
+            val passwordEditText = findViewById<EditText>(R.id.password)
+            val loginButton = findViewById<Button>(R.id.mButton)
+            val registerButton = findViewById<Button>(R.id.buttonReg)
 
-        val button : Button = findViewById(R.id.mButton)
-        button.setOnClickListener{
-            val intent2 = Intent(this, Code::class.java)
-            startActivity(intent2)
+            loginButton.setOnClickListener {
+                val email = emailEditText.text.toString().trim()
+                val password = passwordEditText.text.toString().trim()
+
+                if (isValidEmail(email) && isValidPassword(password)) {
+
+                    Toast.makeText(this, "Вход выполнен!", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, Code::class.java)
+                    startActivity(intent)
+                } else {
+
+                    Toast.makeText(this, "Неверный email или пароль", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            registerButton.setOnClickListener {
+
+                val intent = Intent(this, Registration::class.java)
+                startActivity(intent)
+            }
         }
 
-        val button2 : Button = findViewById(R.id.buttonReg)
-        button2.setOnClickListener{
-            val intent = Intent(this, Registration::class.java)
-            startActivity(intent)
+        private fun isValidEmail(email: String): Boolean {
+            return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
         }
+
+        private fun isValidPassword(password: String): Boolean {
+            return password.length >= 6
+
+        }
+
 
     }
 
- /*   private fun validateInput() {
-        val email=emailEditText.text.toString().trim()
-        val password = passwordEditText.text.toString().trim()
-        if (email.isEmpty()|| password.isEmpty())
-        {
-            showError ("Заполните все поля")
-            return
-        }
-
-      //  if (isValidEmail(email))
-        {
-            showError ("Неккоректный адрес электронной почты")
-        }
-
-        val intent = Intent(this, Code::class.java)
-        startActivity(intent)
-
-    }
-
-    private fun showError(message: String) {
-        errorTextView.text = message
-        errorTextView.visibility = View.VISIBLE
-
-    }
-
-   private fun isValidEmail(email: String) {
-        return
-        Patterns.EMAIL_ADDRESS.matcher(email).matches() && email.all{it.isLowerCase()||it.isDigit() }
-    }
-*/
-}

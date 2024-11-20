@@ -10,8 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:id="@+id/constraintLayout"
-        android:layout_width="421dp"
-        android:layout_height="224dp"
+        android:layout_width="418dp"
+        android:layout_height="223dp"
         android:background="#2A2A37"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -83,7 +83,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/userButton"
@@ -115,7 +115,10 @@
         app:layout_constraintVertical_bias="0.927" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:id="@+id/recyclerViewRoom"
+        android:layout_width="393dp"
+        android:layout_height="381dp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="351dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

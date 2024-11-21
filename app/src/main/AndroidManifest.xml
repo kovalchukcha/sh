@@ -22,14 +22,16 @@
             android:name=".Device"
             android:exported="false" />
         <activity
-            android:name=".test"
-            android:exported="false" />
-        <activity
             android:name=".AddDevice"
             android:exported="false" />
         <activity
             android:name=".FirstPage"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+            </intent-filter>
+        </activity>
         <activity
             android:name=".AddRoom"
             android:exported="false" />

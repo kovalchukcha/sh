@@ -59,7 +59,7 @@ class Code : AppCompatActivity() {
                 val intent = Intent (this,AddAdress::class.java)
                 startActivity(intent)
             }
-        }}
+        } }
 
     }
 

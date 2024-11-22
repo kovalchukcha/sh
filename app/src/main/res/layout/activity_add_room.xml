@@ -86,5 +86,16 @@
         app:layout_constraintTop_toBottomOf="@+id/editText1"
         app:layout_constraintVertical_bias="0.806" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/mButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.153" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

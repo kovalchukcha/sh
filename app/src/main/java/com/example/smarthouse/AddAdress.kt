@@ -17,7 +17,7 @@ class AddAdress : AppCompatActivity() {
 
                 buttonSave.setOnClickListener {
                     val inputText = editTextAddress.text.toString()
-                    val regex = Regex("""^.*\s*,\s*ul\.\s*.*\s*,\s*d\.\s*\d+$""")
+                    val regex = Regex("""^.*\s*,\s*st\.\s*.*\s*,\s*h\.\s*\d+$""")
 
                     if (regex.matches(inputText)) {
 
@@ -31,7 +31,7 @@ class AddAdress : AppCompatActivity() {
 
                         Toast.makeText(
                             this,
-                            "Неверный формат адреса. Введите адрес в формате:\nГород, ul. Улица, d. Номер дома",
+                            "Неверный формат адреса. Введите адрес в формате:\nГород, st. Улица, h. Номер дома",
                             Toast.LENGTH_LONG
                         ).show()
                     }

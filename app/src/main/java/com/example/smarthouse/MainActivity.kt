@@ -14,13 +14,13 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import io.github.jan.supabase.SupabaseClient
-import io.github.jan.supabase.auth.Auth
 import io.github.jan.supabase.createSupabaseClient
+import io.github.jan.supabase.gotrue.Auth
 import io.github.jan.supabase.postgrest.Postgrest
 
 class MainActivity : AppCompatActivity() {
 
-    val supabase = createSupabaseClient(
+   val supabase = createSupabaseClient(
         supabaseUrl = "https://jmsevptmyawvjbpyrxkn.supabase.co",
         supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imptc2V2cHRteWF3dmpicHlyeGtuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE1Njk4MTYsImV4cCI6MjA0NzE0NTgxNn0.9vG7AHxnn5tGcjNsZv3HxtmyfpaQDKc3rMoAoeniu3A"
     ) {
